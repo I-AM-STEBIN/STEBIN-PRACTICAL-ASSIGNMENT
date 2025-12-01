@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Select Student Profile</title>
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+<h2>Select a Student</h2>
+
+<div class="student-list">
+    
+    <div class="student-row">
+        <span>Stebin</span>
+        <button class="show-btn" onclick="showProfile('Stebin', 'BSc Computer Science', ['HTML','CSS','JavaScript','Python','Django'])">Show Profile</button>
+    </div>
+
+    <div class="student-row">
+        <span>Rahul</span>
+        <button class="show-btn" onclick="showProfile('Rahul', 'BCA', ['Java','SQL','C Programming','Git','DSA'])">Show Profile</button>
+    </div>
+
+    <div class="student-row">
+        <span>Anjali</span>
+        <button class="show-btn" onclick="showProfile('Anjali', 'BSc IT', ['UI/UX','Figma','HTML','CSS','React'])">Show Profile</button>
+    </div>
+
+    <div class="student-row">
+        <span>Meera</span>
+        <button class="show-btn" onclick="showProfile('Meera', 'BCom CA', ['Tally','Excel','MS Office','Python Basics','Communication'])">Show Profile</button>
+    </div>
+
+    <div class="student-row">
+        <span>Akash</span>
+        <button class="show-btn" onclick="showProfile('Akash', 'BTech CSE', ['Machine Learning','Python','NumPy','Pandas','TensorFlow'])">Show Profile</button>
+    </div>
+
+</div>
+
+<div class="profile-box" id="profileBox">
+    <h3 id="studentName"></h3>
+    <p id="courseName"></p>
+    <h4>Skills</h4>
+    <ul id="skillList"></ul>
+</div>
+<div class="logout-box">
+       <a href="dummy.html"> <button class="logout-btn">Logout</button></a>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
