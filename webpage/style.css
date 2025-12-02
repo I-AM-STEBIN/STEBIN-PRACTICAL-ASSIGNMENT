@@ -88,26 +88,7 @@ body {
         background: #324dff;
     }
 
-    .profile-box {
-        width: 420px;
-        margin: 30px auto;
-        background: #fff;
-        padding: 25px;
-        border-radius: 12px;
-        display: none;
-        box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
-    }
-
-    ul { list-style: none; padding: 0; }
-    ul li {
-        background: #e6eaff;
-        padding: 8px;
-        margin: 6px 0;
-        border-radius: 6px;
-    }
-
-
-    .logout-box {
+.logout-box {
     text-align: right;
     padding: 20px;
 }
@@ -124,4 +105,37 @@ body {
 
 .logout-btn:hover {
     background: #d63636;
+}
+
+.popup {
+    background: #fff;
+    width: 90%;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 12px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.2);
+}
+
+.close-btn {
+    background: red;
+    color: white;
+    border: none;
+    float: right;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+ul li {
+    background: #e6eaff;
+    margin: 6px 0;
+    padding: 8px;
+    border-radius: 6px;
+    list-style: none;
+    padding-left: 0;
 }
